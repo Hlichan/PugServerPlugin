@@ -1,0 +1,9 @@
+name: PugServerPlugin
+version: '${project.version}'
+main: net.hlichan.pug.Main
+api-version: 1.19
+prefix: PUG
+load: STARTUP
+authors: [Hiiragi]
+description: pug server plugin
+website: www.hlichan.net
