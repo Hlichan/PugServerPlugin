@@ -18,8 +18,9 @@ public class HatCommandExecutor implements CommandExecutor {
             if (p.getInventory().getItemInMainHand().getType() == Material.AIR) {
                 p.sendMessage("被りたいアイテムを持ってください。");
             } else {
+                ItemStack helmet = p.getInventory().getHelmet();
                 p.getInventory().setHelmet(p.getInventory().getItemInMainHand());
-                p.getInventory().setItemInMainHand(new ItemStack(Material.AIR));
+                p.getInventory().setItemInMainHand(helmet);
             }
         }
         return true;
