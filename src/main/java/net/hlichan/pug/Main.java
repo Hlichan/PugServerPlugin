@@ -1,5 +1,6 @@
 package net.hlichan.pug;
 
+import net.hlichan.pug.command.HatCommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
@@ -11,6 +12,8 @@ public final class Main extends JavaPlugin {
         super.onEnable();
 
         plugin = this;
+
+        getCommand("hat").setExecutor(new HatCommandExecutor());
 
         getLogger().info("プラグインは正常に起動しました。");
     }

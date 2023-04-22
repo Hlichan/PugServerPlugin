@@ -7,3 +7,7 @@ load: STARTUP
 authors: [Hiiragi]
 description: pug server plugin
 website: www.hlichan.net
+commands:
+  hat:
+    description: hat command.
+    usage: /<command>
